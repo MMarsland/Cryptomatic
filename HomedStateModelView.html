@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            #inputText
+            {
+                height:200px;
+                width:50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="inputArea">
+                <input id="inputText" />
+            </div>
+            <div id="uploadKeyArea">
+                <input type="file" name="inputfile" id="fileinput" /><br>
+                <input id="encode" type="radio" name="coding" value="Encode" onclick="clickRadioButton(this.value)" checked> Encode<br>
+                <input id="decode" type="radio" name="coding" value="Decode" onclick="clickRadioButton(this.value)"> Decode<br>
+                <button onclick="readSingleFile()"> DO IT! </button>
+            </div>
+            <div id="outputArea">
+                <p id="outputText"></p>
+            </div>
+        </div>
+
+
+        <script type="text/javascript">        
+            var indexOffsetIncrement = 6;
+            var offsetIncrement = 9;
+            var encode = true;
+
+            var indexOffset = 0;
+            var offset = 0;
+
+            var text = "";
+            function readSingleFile(evt) {
+                var f = document.getElementById("fileinput").files[0];
+                if (f || (test != "")) {
+                    var r = new FileReader();
+                    r.onload = function (e) {
+                        var contents = e.target.result;
+                        text = r.result;
+
+                        var message = document.getElementById("inputText").value;
+
+                        console.log(encode);
+                        if (encode)
+                        {
+                            document.getElementById("outputText").innerText = encodeMessage(message);
+                        }
+                        else
+                        {
+                            document.getElementById("outputText").innerText = decodeMessage(message);
+                        }
+                    }
+                    
+                    r.readAsText(f);
+                } else {
+                    alert("Please Upload A Key File");
+                }
+            }
+
+            function encodeChar(char)
+            {
+                offset += offsetIncrement;
+                var position = text.indexOf(char, offset) + 1;
+                if (position == 0)
+                {
+                    offset = 0;
+                    position = text.indexOf(char, offset) + 1;
+                    if (position == 0)
+                    {  
+                        alert("CANNOT ENCODE THAT MESSAGE WITH THE GIVEN KEY!");
+                        location.reload();
+                       
+                    }
+                }
+                indexOffset += indexOffsetIncrement;
+                if (indexOffset > 69)
+                {
+                    indexOffset = 0;
+                }
+
+                var newPosition = position + indexOffset;
+                if (newPosition >= text.length)
+                {
+                    newPosition = position;
+                }
+
+                return newPosition;
+            }
+
+            function encodeMessage(message)
+            {
+                indexOffset = 0;
+
+                var encodedWord = "";
+                for (var i = 0; i < message.length; i++)
+                {
+                    encodedWord += encodeChar(message[i]) + "-";
+                }
+
+                return encodedWord.substring(0, encodedWord.length - 1);
+            }
+
+            function decodeChar(position)
+            {
+
+                indexOffset += indexOffsetIncrement;
+                if (indexOffset > 69) {
+                    indexOffset = 0;
+                }
+                var newIndex = position - 1 - indexOffset;
+                if (position + indexOffset >= text.length)
+                {
+                    newIdex = position - 1;
+                }
+
+                return text[newIndex];
+            }
+
+            function decodeMessage(code)
+            {
+                indexOffset = 0;
+                var numbers = code.split('-');
+                var message = "";
+                for (var i = 0; i < numbers.length; i++)
+                {
+                    message += decodeChar(numbers[i]);
+                }
+                return message;
+            }
+
+            function clickRadioButton(type)
+            {
+                if (type == "Encode") {
+                    encode = true;
+                }
+                else
+                {
+                    encode = false;
+                }
+            }
+        </script>
+    </body>
+</html>
