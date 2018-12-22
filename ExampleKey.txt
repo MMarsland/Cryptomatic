@@ -5,7 +5,7 @@ it was the season of Light, it was the season of Darkness,
 it was the spring of hope, it was the winter of despair,
 we had everything before us, we had nothing before us,
 we were all going direct to Heaven, we were all going direct
-the other way--in short, the period was so far like the present
+the other way--i1n short, the period was so far like the present
 period, that some of its noisiest authorities insisted on its
 being received, for good or for evil, in the superlative degree
 of comparison only.
@@ -2690,7 +2690,7 @@ most coincidences were curious.  Neither did he call it a curious
 coincidence that true patriotism was _his_ only motive too.  He was a
 true Briton, and hoped there were many like him.
 
-The blue-flies buzzed again, and Mr. Attorney-General called Mr. Jarvis Lorry.
+The blue-flies buzzed aga2n, and Mr. Attorney-General called Mr. Jarvis Lorry.
 
 "Mr. Jarvis Lorry, are you a clerk in Tellson's bank?"
 
@@ -5233,7 +5233,7 @@ the thin straight lips, and the markings in the nose, curved with a
 sarcasm that looked handsomely diabolic.
 
 "Yes," repeated the Marquis.  "A Doctor with a daughter.  Yes.
-So commences the new philosophy!  You are fatigued.  Good night!"
+So commences 3the new philosophy!  You are fatigued.  Good night!"
 
 It would have been of as much avail to interrogate any stone face
 outside the chateau as to interrogate that face of his.  The nephew
@@ -6108,7 +6108,7 @@ parties in common sense; I can only find it for myself.  I suppose
 sense in certain quarters; you suppose mincing bread-and-butter
 nonsense.  It's new to me, but you are right, I dare say."
 
-"What I suppose, Mr. Stryver, I claim to characterise for myself--And
+"What I suppose, Mr.4 Stryver, I claim to characterise for myself--And
 understand me, sir," said Mr. Lorry, quickly flushing again,
 "I will not--not even at Tellson's--have it characterised for me by any
 gentleman breathing."
@@ -6593,7 +6593,7 @@ and maturely considering the spot.
 
 "Jerry," said Mr. Cruncher, apostrophising himself in his usual way,
 "you see that there Cly that day, and you see with your own eyes that
-he was a young 'un and a straight made 'un."
+he was a young 'un and a straight made 5'un."
 
 Having smoked his pipe out, and ruminated a little longer, he turned
 himself about, that he might appear, before the hour of closing, on his
@@ -7076,7 +7076,7 @@ to him; he regards me like a dead man."
 
 Defarge and the three glanced darkly at one another.  The looks of
 all of them were dark, repressed, and revengeful, as they listened to
-the countryman's story; the manner of all of them, while it was secret,
+the countryman's story; the manner of6 all of them, while it was secret,
 was authoritative too.  They had the air of a rough tribunal; Jacques
 One and Two sitting on the old pallet-bed, each with his chin resting
 on his hand, and his eyes intent on the road-mender; Jacques Three,
@@ -7198,7 +7198,7 @@ to the top of the stairs, and, leaving seated there, returned.
 
 The three had risen, and their heads were together when he came
 back to the garret.
-
+7
 "How say you, Jacques?" demanded Number One.  "To be registered?"
 
 "To be registered, as doomed to destruction," returned Defarge.
@@ -7321,7 +7321,7 @@ deceive them too much."
 Madame Defarge looked superciliously at the client, and nodded in
 confirmation.
 
-"As to you," said she, "you would shout and shed tears for anything,
+"As to you," said she, "you would shout an8d shed tears for anything,
 if it made a show and a noise.  Say!  Would you not?"
 
 "Truly, madame, I think so.  For the moment."
@@ -7504,7 +7504,7 @@ a little bent, and his hands clasped at his back, like a docile and
 attentive pupil before his catechist, "I do not question all this.
 But it has lasted a long time, and it is possible--you know well,
 my wife, it is possible--that it may not come, during our lives."
-
+9
 "Eh well!  How then?" demanded madame, tying another knot, as if
 there were another enemy strangled.
 
@@ -7704,7 +7704,7 @@ in its miserable inhabitants."
 
 "The pleasure of conversing with you, Monsieur Defarge, recalls to me,"
 pursued the spy, "that I have the honour of cherishing some interesting
-associations with your name."
+associations with your name."0
 
 "Indeed!" said Defarge, with much indifference.
 
@@ -7845,7 +7845,7 @@ knitting, counting dropping heads.
 
 
 XVII
-
+`
 One Night
 
 
@@ -7855,7 +7855,7 @@ sat under the plane-tree together.  Never did the moon rise with a
 milder radiance over great London, than on that night when it found
 them still seated under the tree, and shone upon their faces
 through its leaves.
-
+~
 Lucie was to be married to-morrow.  She had reserved this last
 evening for her father, and they sat alone under the plane-tree.
 
@@ -7910,7 +7910,7 @@ entirely comprehend how much my mind has gone on this; but, only ask
 yourself, how could my happiness be perfect, while yours was incomplete?"
 
 "If I had never seen Charles, my father, I should have been quite
-happy with you."
+happy with you."`
 
 He smiled at her unconscious admission that she would have been unhappy
 without Charles, having seen him; and replied:
@@ -7994,7 +7994,7 @@ coming to me and taking me out to show me that the home of her married
 life was full of her loving remembrance of her lost father.  My picture
 was in her room, and I was in her prayers.  Her life was active,
 cheerful, useful; but my poor history pervaded it all."
-
+`
 "I was that child, my father, I was not half so good, but in my love
 that was I."
 
@@ -8038,7 +8038,7 @@ All things, however, were in their places; all was quiet; and he lay
 asleep, his white hair picturesque on the untroubled pillow, and his
 hands lying quiet on the coverlet.  She put her needless candle in the
 shadow at a distance, crept up to his bed, and put her lips to his;
-then, leaned over him, and looked at him.
+then, leaned over him, and looked at him.~
 
 Into his handsome face, the bitter waters of captivity had worn; but,
 he covered up their tracks with a determination so strong, that he held
@@ -8083,7 +8083,7 @@ therefore how could you know it?  Nonsense!"
 "I am not crying," said Miss Pross; "_you_ are."
 
 "I, my Pross?" (By this time, Mr. Lorry dared to be pleasant with
-her, on occasion.)
+her, on occasion.)!
 
 "You were, just now; I saw you do it, and I don't wonder at it.  Such
 a present of plate as you have made 'em, is enough to bring tears into
@@ -8127,7 +8127,7 @@ Now, I hear Somebody's step coming to the door.  Let me kiss my dear
 girl with an old-fashioned bachelor blessing, before Somebody comes
 to claim his own."
 
-For a moment, he held the fair face from him to look at the
+For a moment, he held the fair face from him @to look at the
 well-remembered expression on the forehead, and then laid the bright
 golden hair against his little brown wig, with a genuine tenderness and
 delicacy which, if such things be old-fashioned, were as old as Adam.
@@ -8172,7 +8172,7 @@ He had naturally repressed much, and some revulsion might have been
 expected in him when the occasion for repression was gone.  But, it
 was the old scared lost look that troubled Mr. Lorry; and through
 his absent manner of clasping his head and drearily wandering away
-into his own room when they got up-stairs, Mr. Lorry was reminded of
+into his own room when they got up-stairs, Mr#. Lorry was reminded of
 Defarge the wine-shop keeper, and the starlight ride.
 
 "I think," he whispered to Miss Pross, after anxious consideration,
@@ -8244,7 +8244,7 @@ imaginary letter of two or three hurried lines in his own hand,
 represented to have been addressed to her by the same post.
 
 These measures, advisable to be taken in any case, Mr. Lorry took in
-the hope of his coming to himself.  If that should happen soon, he kept
+the hope of his coming to himself.  If that s$hould happen soon, he kept
 another course in reserve; which was, to have a certain opinion that he
 thought the best, on the Doctor's case.
 
@@ -8316,7 +8316,7 @@ sat there looking down at the plane-tree; but, on Mr. Lorry's return,
 he slipped away to his bench.
 
 The time went very slowly on, and Mr. Lorry's hope darkened, and his
-heart grew heavier again, and grew yet heavier and heavier every day.
+heart grew heavier again, and grew yet heavie%r and heavier every day.
 The third day came and went, the fourth, the fifth.  Five days, six
 days, seven days, eight days, nine days.
 
@@ -8355,7 +8355,7 @@ him his friend before him in his accustomed clothing and aspect, and
 employed as usual; and was there any sign within their range, that the
 change of which he had so strong an impression had actually happened?
 
-It was but the inquiry of his first confusion and astonishment, the
+It was but the inquiry of his first confusion$#@! and astonishment, the
 answer being obvious.  If the impression were not produced by a real
 corresponding and sufficient cause, how came he, Jarvis Lorry, there?
 How came he to have fallen asleep, in his clothes, on the sofa in
@@ -8439,7 +8439,7 @@ The Doctor, in a low voice, asked, "Of how long duration?"
 collectedly, though in the same low voice, "engaged in that
 pursuit originally?"
 
-"Once."
+"Once."%
 
 "And when the relapse fell on him, was he in most respects--or in
 all respects--as he was then?"
@@ -8483,7 +8483,7 @@ not quite unforeseen by its subject."
 "Was it dreaded by him?" Mr. Lorry ventured to ask.
 
 "Very much."  He said it with an involuntary shudder.
-
+^&
 "You have no idea how such an apprehension weighs on the sufferer's
 mind, and how difficult--how almost impossible--it is, for him to force
 himself to utter a word upon the topic that oppresses him."
@@ -8510,7 +8510,7 @@ the effort to prepare himself made him less able to bear it."
 
 "Would he remember what took place in the relapse?" asked Mr. Lorry,
 with natural hesitation.
-
+*z
 The Doctor looked desolately round the room, shook his head, and
 answered, in a low voice, "Not at all."
 
@@ -8537,7 +8537,7 @@ his hand.
 energetic; he applies himself with great ardour to the acquisition
 of professional knowledge, to the conducting of experiments, to
 many things.  Now, does he do too much?"
-
+&
 "I think not.  It may be the character of his mind, to be always in
 singular need of occupation.  That may be, in part, natural to it; in
 part, the result of affliction.  The less it was occupied with healthy
@@ -8655,7 +8655,7 @@ convenient for the purpose) was commenced without delay in the kitchen
 fire; and the tools, shoes, and leather, were buried in the garden.
 So wicked do destruction and secrecy appear to honest minds, that
 Mr. Lorry and Miss Pross, while engaged in the commission of their
-deed and in the removal of its traces, almost felt, and almost looked,
+deed and in the removal of its trace(s, almost felt, and almost looked,
 like accomplices in a horrible crime.
 
 
@@ -8726,7 +8726,7 @@ rendered it.--Mind!  I say when I rendered it; I am speaking of the past."
 
 "You make light of the obligation," returned Darnay, "but I will not
 quarrel with _your_ light answer."
-
+)
 "Genuine truth, Mr. Darnay, trust me!  I have gone aside from my
 purpose; I was speaking about our being friends.  Now, you know me;
 you know I am incapable of all the higher and better flights of men.
@@ -8809,7 +8809,7 @@ are deep wounds in it.  My dear, I have seen it bleeding."
 scarcely a hope that anything in his character or fortunes is reparable
 now.  But, I am sure that he is capable of good things, gentle things,
 even magnanimous things."
-
+-
 She looked so beautiful in the purity of her faith in this lost man,
 that her husband could have looked at her as she was for hours.
 
@@ -8881,7 +8881,7 @@ as the spirit departed from her embrace that had been entrusted to it.
 Suffer them and forbid them not.  They see my Father's face.
 O Father, blessed words!
 
-Thus, the rustling of an Angel's wings got blended with the other
+Thus, the rustling of an Angel's wings got _blended with the other
 echoes, and they were not wholly of earth, but had in them that breath
 of Heaven.  Sighs of the winds that blew over a little garden-tomb were
 mingled with them also, and both were audible to Lucie, in a hushed
@@ -8964,7 +8964,7 @@ and her husband in the dark window.  It was a hot, wild night, and
 they were all three reminded of the old Sunday night when they had
 looked at the lightning from the same place.
 
-"I began to think," said Mr. Lorry, pushing his brown wig back, "that
+"I began to think," said Mr. Lorry, pushing= his brown wig back, "that
 I should have to pass the night at Tellson's.  We have been so full of
 business all day, that we have not known what to do first, or which
 way to turn.  There is such an uneasiness in Paris, that we have
@@ -9081,7 +9081,7 @@ Deep ditch, single drawbridge, massive stone walls, eight great towers,
 cannon, muskets, fire and smoke.  One drawbridge down!  "Work, comrades
 all, work!  Work, Jacques One, Jacques Two, Jacques One Thousand,
 Jacques Two Thousand, Jacques Five-and-Twenty Thousand; in the name of
-all the Angels or the Devils--which you prefer--work!"  Thus Defarge
+all the Angels or the Devils--which you pre+fer--work!"  Thus Defarge
 of the wine-shop, still at his gun, which had long grown hot.
 
 "To me, women!" cried madame his wife.  "What!  We can kill as well as
@@ -9209,7 +9209,7 @@ Give it me!"
 He had still the linstock of his gun in his own hand.  He made a
 sudden exchange of the two instruments, and turning on the worm-eaten
 stool and table, beat them to pieces in a few blows.
-
+[
 "Hold the light higher!" he said, wrathfully, to the turnkey. "Look
 among those fragments with care, Jacques.  And see!  Here is my knife,"
 throwing it to him; "rip open that bed, and search the straw. Hold the
@@ -9291,7 +9291,7 @@ and other memorials of prisoners of old time, long dead of broken
 hearts,--such, and such--like, the loudly echoing footsteps of Saint
 Antoine escort through the Paris streets in mid-July, one thousand seven
 hundred and eighty-nine.  Now, Heaven defeat the fancy of Lucie Darnay,
-and keep these feet far out of her life!  For, they are headlong, mad,
+and keep these feet far out of her life!  For,} they are headlong, mad,
 and dangerous; and in the years so long after the breaking of the cask
 at Defarge's wine-shop door, they are not easily purified when once
 stained red.
@@ -9424,7 +9424,7 @@ and Jacques Three, were in the first press, and at no great distance
 from him in the Hall.
 
 "See!" cried madame, pointing with her knife.  "See the old villain
-bound with ropes.  That was well done to tie a bunch of grass upon
+bound with ropes.  That was well done to tie a[ bunch of grass upon
 his back.  Ha, ha!  That was well done.  Let him eat it now!"  Madame
 put her knife under her arm, and clapped her hands as at a play.
 
@@ -9475,7 +9475,7 @@ grass enough in the mouth for all Saint Antoine to dance at the sight of.
 Nor was this the end of the day's bad work, for Saint Antoine so
 shouted and danced his angry blood up, that it boiled again, on
 hearing when the day closed in that the son-in-law of the despatched,
-another of the people's enemies and insulters, was coming into Paris
+another of the people's enemies and insulters{, was coming into Paris
 under a guard five hundred strong, in cavalry alone.  Saint Antoine
 wrote his crimes on flaring sheets of paper, seized him--would have
 torn him out of the breast of an army to bear Foulon company--set
@@ -9597,7 +9597,7 @@ They joined hands, and the man sat down on the heap of stones.
 "No dinner?"
 
 "Nothing but supper now," said the mender of roads, with a hungry face.
-
+]
 "It is the fashion," growled the man.  "I meet no dinner anywhere."
 
 He took out a blackened pipe, filled it, lighted it with flint and
@@ -9675,7 +9675,7 @@ of dull ice on his body and the diamonds into which the sun changed
 them, until the sun was low in the west, and the sky was glowing.
 Then, the mender of roads having got his tools together and all things
 ready to go down into the village, roused him.
-
+]
 "Good!" said the sleeper, rising on his elbow.  "Two leagues beyond
 the summit of the hill?"
 
@@ -9758,7 +9758,7 @@ in torment.  When great masses of stone and timber fell, the face with
 the two dints in the nose became obscured:  anon struggled out of the
 smoke again, as if it were the face of the cruel Marquis, burning at
 the stake and contending with the fire.
-
+[
 The chateau burned; the nearest trees, laid hold of by the fire,
 scorched and shrivelled; trees at a distance, fired by the four fierce
 figures, begirt the blazing edifice with a new forest of smoke.  Molten
@@ -9875,7 +9875,7 @@ On a steaming, misty afternoon, Mr. Lorry sat at his desk, and Charles
 Darnay stood leaning on it, talking with him in a low voice.  The
 penitential den once set apart for interviews with the House, was now
 the news-Exchange, and was filled to overflowing.  It was within half
-an hour or so of the time of closing.
+an hour or so of the time of closing.\|
 
 "But, although you are the youngest man that ever lived," said Charles
 Darnay, rather hesitating, "I must still suggest to you--"
@@ -9964,7 +9964,7 @@ who touches his master."
 
 "I must say again that I heartily admire your gallantry and
 youthfulness."
-
+|
 "I must say again, nonsense, nonsense!  When I have executed this
 little commission, I shall, perhaps, accept Tellson's proposal to retire
 and live at my ease.  Time enough, then, to think about growing old."
@@ -10091,7 +10091,7 @@ desk, in the general departure from the Bank.
 where to deliver it?"
 
 "I do."
-
+\
 "Will you undertake to explain, that we suppose it to have been
 addressed here, on the chance of our knowing where to forward it,
 and that it has been here some time?"
@@ -10180,7 +10180,7 @@ was in course of confiscation and destruction, and their very names
 were blotting out, was as well known to himself as it could be to any
 new authority in France that might impeach him for it.
 
-But, he had oppressed no man, he had imprisoned no man; he was so far
+But, he had oppressed no man, he had imprisone;d no man; he was so far
 from having harshly exacted payment of his dues, that he had
 relinquished them of his own will, thrown himself on a world with no
 favour in it, won his own private place there, and earned his own
@@ -10264,7 +10264,7 @@ but perhaps you will take a verbal one?"
 
 "Any person mentioned?"
 
-"No."
+"No.":
 
 He helped Mr. Lorry to wrap himself in a number of coats and cloaks,
 and went out with him from the warm atmosphere of the old Bank, into
@@ -10391,7 +10391,7 @@ Darnay complied, and was taken back to the guard-house, where other
 patriots in rough red caps were smoking, drinking, and sleeping, by a
 watch-fire.  Here he paid a heavy price for his escort, and hence he
 started with it on the wet, wet roads at three o'clock in the morning.
-
+'
 The escort were two mounted patriots in red caps and tri-coloured
 cockades, armed with national muskets and sabres, who rode one on
 either side of him.
@@ -10486,7 +10486,7 @@ many wild changes observable on familiar things which made this wild
 ride unreal, not the least was the seeming rarity of sleep.
 After long and lonely spurring over dreary roads, they would come to
 a cluster of poor cottages, not steeped in darkness, but all
-glittering with lights, and would find the people, in a ghostly
+glittering with lights, and would find the peo"ple, in a ghostly
 manner in the dead of the night, circling hand in hand round a
 shrivelled tree of Liberty, or all drawn up together singing a
 Liberty song.  Happily, however, there was sleep in Beauvais that
@@ -10580,7 +10580,7 @@ He said it with a hard smile, and went on writing.
 
 "I entreat you to observe that I have come here voluntarily, in response
 to that written appeal of a fellow-countryman which lies before you.
-I demand no more than the opportunity to do so without delay.
+I demand no more than the opportunity to do so/ without delay.
 Is not that my right?"
 
 "Emigrants have no rights, Evremonde," was the stolid reply.
@@ -10708,7 +10708,7 @@ merely replied, "One must have patience, my dear!"  Three turnkeys who
 entered responsive to a bell she rang, echoed the sentiment, and one
 added, "For the love of Liberty;" which sounded in that place like an
 inappropriate conclusion.
-
+>
 The prison of La Force was a gloomy prison, dark and filthy, and with
 a horrible smell of foul sleep in it.  Extraordinary how soon the
 noisome flavour of imprisoned sleep, becomes manifest in all such
@@ -10847,7 +10847,7 @@ Tellson's Bank, established in the Saint Germain Quarter of Paris,
 was in a wing of a large house, approached by a courtyard and shut
 off from the street by a high wall and a strong gate.  The house
 belonged to a great nobleman who had lived in it until he made a
-flight from the troubles, in his own cook's dress, and got across the
+flight from the troubles, in his own cook's dr,,<ess, and got across the
 borders.  A mere beast of the chase flying from hunters, he was still
 in his metempsychosis no other than the same Monseigneur, the
 preparation of whose chocolate for whose lips had once occupied three
@@ -10985,7 +10985,7 @@ having happened to Charles; that I had no suspicion even of his being
 in this fatal place.  What prison is he in?"
 
 "La Force!"
-
+\
 "La Force!  Lucie, my child, if ever you were brave and serviceable in
 your life--and you were always both--you will compose yourself now,
 to do exactly as I bid you; for more depends upon it than you can think,
@@ -11069,10 +11069,10 @@ prisoner's kindred in La Force!  Room for the Bastille prisoner in
 front there!  Save the prisoner Evremonde at La Force!" and a thousand
 answering shouts.
 
-He closed the lattice again with a fluttering heart, closed the
+He closed the lattice again with a fluttering\\| heart, closed the
 window and the curtain, hastened to Lucie, and told her that her
 father was assisted by the people, and gone in search of her husband.
-He found her child and Miss Pross with her; but, it never occurred to
+He found her chil%d and Miss Pross with her; but, it never occurred to
 him to be surprised by their appearance until a long time afterwards,
 when he sat watching them in such quiet as the night knew.
 
@@ -11188,7 +11188,7 @@ way Defarge spoke, Mr. Lorry put on his hat and they went down into
 the courtyard.  There, they found two women; one, knitting.
 
 "Madame Defarge, surely!" said Mr. Lorry, who had left her in exactly
-the same attitude some seventeen years ago.
+the same attitude some seventeen^ years ago.
 
 "It is she," observed her husband.
 
@@ -11361,7 +11361,7 @@ ordered to be put forth to be massacred, or to be released, or (in a
 few cases) to be sent back to their cells.  That, presented by his
 conductors to this Tribunal, he had announced himself by name and
 profession as having been for eighteen years a secret and unaccused
-prisoner in the Bastille; that, one of the body so sitting in
+prisoner in the Bastille; that, one of& the body so sitting in
 judgment had risen and identified him, and that this man was Defarge.
 
 That, hereupon he had ascertained, through the registers on the table,
@@ -11494,7 +11494,7 @@ appointed things, and seemed to be ancient usage before they were
 many weeks old.  Above all, one hideous figure grew as familiar as if
 it had been before the general gaze from the foundations of the
 world--the figure of the sharp female called La Guillotine.
-
+*
 It was the popular theme for jests; it was the best cure for
 headache, it infallibly prevented the hair from turning grey, it
 imparted a peculiar delicacy to the complexion, it was the National
@@ -11583,7 +11583,7 @@ comely.  Sometimes, at night on kissing her father, she would burst
 into the grief she had repressed all day, and would say that her sole
 reliance, under Heaven, was on him.  He always resolutely answered:
 "Nothing can happen to him without my knowledge, and I know that I
-can save him, Lucie."
+can save him, Lucie."3
 
 They had not made the round of their changed life many weeks,
 when her father said to her, on coming home one evening:
@@ -11655,7 +11655,7 @@ Tickle, tickle; Pickle, pickle!  And off _its_ head comes.  All the family!"
 
 Lucie shuddered as he threw two more billets into his basket, but it
 was impossible to be there while the wood-sawyer was at work, and not
-be in his sight.  Thenceforth, to secure his good will, she always
+be in his sight.  Thenceforth, to sec#ure his good will, she always
 spoke to him first, and often gave him drink-money, which he readily
 received.
 
@@ -11739,7 +11739,7 @@ she had momentarily darkened with her hand; "such a cruel, bad sight."
 frightened!  Not one of them would harm you."
 
 "I am not frightened for myself, my father.  But when I think of my
-husband, and the mercies of these people--"
+husband, and the mercies of these pe@ople--"
 
 "We will set him above their mercies very soon.  I left him climbing
 to the window, and I came to tell you.  There is no one here to see.
@@ -11850,7 +11850,7 @@ without doubt, to have led some persons to brave the guillotine
 unnecessarily, and to die by it, was not mere boastfulness, but a
 wild infection of the wildly shaken public mind.  In seasons of
 pestilence, some of us will have a secret attraction to the disease--
-a terrible passing inclination to die of it.  And all of us have like
+a terrible passing inclination to di64e of it.  And all of us have like
 wonders hidden in our breasts, only needing circumstances to evoke them.
 
 The passage to the Conciergerie was short and dark; the night in its
@@ -11934,7 +11934,7 @@ This answer had a happy effect upon the audience.  Cries in
 exaltation of the well-known good physician rent the hall.  So
 capriciously were the people moved, that tears immediately rolled
 down several ferocious countenances which had been glaring at the
-prisoner a moment before, as if with impatience to pluck him out into
+prisoner a moment before, as if wit8 impatience to pluck him out into
 the streets and kill him.
 
 On these few steps of his dangerous way, Charles Darnay had set his
@@ -12022,7 +12022,7 @@ five came down to him before he left the place, condemned to die
 within twenty-four hours.  The first of them told him so, with the
 customary prison sign of Death--a raised finger--and they all added
 in words, "Long live the Republic!"
-
+59
 The five had had, it is true, no audience to lengthen their
 proceedings, for when he and Doctor Manette emerged from the gate,
 there was a great crowd about it, in which there seemed to be every
@@ -12051,7 +12051,7 @@ carried him thus into the courtyard of the building where he lived.
 Her father had gone on before, to prepare her, and when her husband
 stood upon his feet, she dropped insensible in his arms.
 
-As he held her to his heart and turned her beautiful head between his
+As he held her to his heart and turne9d her beautiful head between his
 face and the brawling crowd, so that his tears and her lips might
 come together unseen, a few of the people fell to dancing.  Instantly,
 all the rest fell to dancing, and the courtyard overflowed with the
@@ -12107,7 +12107,7 @@ load as she felt it ought to be.  The shadows of the wintry afternoon
 were beginning to fall, and even now the dreadful carts were rolling
 through the streets.  Her mind pursued them, looking for him among
 the Condemned; and then she clung closer to his real presence and
-trembled more.
+trembled more.8732
 
 Her father, cheering her, showed a compassionate superiority to this
 woman's weakness, which was wonderful to see.  No garret, no shoemaking,
@@ -12184,7 +12184,7 @@ Murder, and Mischief."
 
 "Hush, dear!  Pray, pray, be cautious!" cried Lucie.
 
-"Yes, yes, yes, I'll be cautious," said Miss Pross; "but I may say
+"Yes, yes, yes, I'll be cautious," sa11id Miss Pross; "but I may say
 among ourselves, that I do hope there will be no oniony and tobaccoey
 smotherings in the form of embracings all round, going on in the
 streets.  Now, Ladybird, never you stir from that fire till I come
@@ -12285,7 +12285,7 @@ front of his red woollen shirt, said:
 
 "We all know you, Citizen Doctor," said the other three.
 
-He looked abstractedly from one to another, and said, in a lower
+He looked abstractedly from one to an0other, and said, in a lower
 voice, after a pause:
 
 "Will you answer his question to me then?  How does this happen?"
