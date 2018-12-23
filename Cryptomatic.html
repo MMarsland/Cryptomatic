@@ -116,7 +116,7 @@
 
 
 
-        <script type="text/javascript">        
+        <script type="text/javascript">
             var indexStepIncrement = 6;
             var searchStartOffsetIncrement = 9;
             var encode = true;
@@ -145,7 +145,7 @@
                             document.getElementById("outputText").innerHTML = decodeMessage(message);
                         }
                     }
-                    
+
                     r.readAsText(f);
                 } else if (key != "")
                 {
@@ -169,17 +169,17 @@
                     searchStartOffset = 0;
                     position = key.indexOf(char, searchStartOffset) + 1;
                     if (position == 0)
-                    {  
+                    {
                         throw new Error("Bad Key/Message Combination");
                     }
                 }
                 searchStartOffset += searchStartOffsetIncrement;
 
-                indexStep += indexStepIncrement; // 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 6, ...    
+                indexStep += indexStepIncrement; // 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 6, ...
                 if (indexStep > 69) {
                     indexStep = 6;
                 }
-                          
+
                 var newPosition = position + indexStep;
 
                 return newPosition;
@@ -207,7 +207,7 @@
 
             function decodeChar(position)
             {
-                indexStep += indexStepIncrement; // 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 6, ...    
+                indexStep += indexStepIncrement; // 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 6, ...
                 if (indexStep > 69) {
                     indexStep = 6;
                 }
@@ -235,40 +235,42 @@
                 }
 
             }
+            </script>
 
-            function clickRadioButton(type)
-            {
-                if (type == "Encode") {
-                    encode = true;
-                    document.getElementById('encodeButton').innerText = "ENCODE";
-                }
-                else
+            <script type="text/javascript">
+                function clickRadioButton(type)
                 {
-                    encode = false;
-                    document.getElementById('encodeButton').innerText = "DECODE";
+                    if (type == "Encode") {
+                        encode = true;
+                        document.getElementById('encodeButton').innerText = "ENCODE";
+                    }
+                    else
+                    {
+                        encode = false;
+                        document.getElementById('encodeButton').innerText = "DECODE";
+                    }
                 }
-            }
 
-            function setbg(color) {
-                document.getElementById("inputText").style.background = color
-            }
-
-            document.querySelector("html").classList.add('js');
-
-            var fileInput = document.querySelector(".input-file"),
-                button = document.querySelector(".input-file-trigger"),
-                the_return = document.querySelector(".file-return");
-
-            button.addEventListener("click", function (event) {
-                fileInput.focus();
-                return false;
-            });
-
-            fileInput.addEventListener("change", function (event) {
-                if (this.files[0]) {
-                    the_return.innerHTML = this.files[0].name;
+                function setbg(color) {
+                    document.getElementById("inputText").style.background = color
                 }
-            });
-        </script>
+
+                document.querySelector("html").classList.add('js');
+
+                var fileInput = document.querySelector(".input-file"),
+                    button = document.querySelector(".input-file-trigger"),
+                    the_return = document.querySelector(".file-return");
+
+                button.addEventListener("click", function (event) {
+                    fileInput.focus();
+                    return false;
+                });
+
+                fileInput.addEventListener("change", function (event) {
+                    if (this.files[0]) {
+                        the_return.innerHTML = this.files[0].name;
+                    }
+                });
+            </script>
     </body>
 </html>
