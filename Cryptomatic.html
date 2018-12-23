@@ -1,24 +1,113 @@
+<!--
+    --- The Cryptomatic 69, Version 2---
+    @author Michael Marsland (For Trevor Ryan Johns) December 14th, 2018
+
+    "Merry Christmas and Happy Birthday. May the big brother state never take away your ability to scheme and plot."
+-->
+
+
 <!DOCTYPE HTML>
 <html>
     <head>
         <style>
-            #inputText
-            {
-                height:200px;
-                width:50%;
+            body {
+                font-family: "Open sans", "Segoe UI", "Segoe WP", Helvetica, Arial, sans-serif;
+                color: #7F8C9A;
+                background: #FCFDFD;
             }
+
+            #inputText {
+                width: 600px;
+                height: 120px;
+                border: 3px solid #cccccc;
+                padding: 5px;
+                font-family: Tahoma, sans-serif;
+                background-position: bottom right;
+                background-repeat: no-repeat;
+            }
+
+            #encodeButton {
+                background-color: #34495E;
+                border: none;
+                color: white;
+                padding: 5px 12px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin-top: 10px;
+                font-family: "Palatino Linotype";
+                border: 0px dashed #39D2B4;
+                border-radius: 4px;
+            }
+
+            .input-file-container {
+                position: relative;
+                width: 200px;
+            }
+
+            .js .input-file-trigger {
+                display: block;
+                padding: 14px 45px;
+                background: #39D2B4;
+                color: #fff;
+                transition: all 0.3s;
+                font-size: 1em;
+                cursor: pointer;
+            }
+
+            .js .input-file {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 200px;
+                opacity: 0;
+                padding: 14px 0;
+                cursor: pointer;
+            }
+
+            .js .input-file:hover + .input-file-trigger,
+            .js .input-file-trigger:hover {
+                background: #34495E;
+                color: #39D2B4;
+            }
+
+            .file-return {
+                margin: 0;
+                margin-top: 5px;
+                margin-bottom: 10px;
+            }
+
+            .js .file-return {
+                font-style: italic;
+                font-size: .9em;
+                font-weight: bold;
+            }
+
+            .js .file-return:not(:empty):before {
+                content: "Current Key: ";
+                font-style: normal;
+                font-weight: normal;
+            }
+
+
+
         </style>
     </head>
     <body>
         <div id="wrapper">
             <div id="inputArea">
-                <input id="inputText" />
+                <textarea name="styled-textarea" id="inputText" onfocus="setbg('#39d2b407');" onblur="setbg('white')"></textarea>
             </div>
             <div id="uploadKeyArea">
-                <input type="file" name="inputfile" id="fileinput" /><br>
+                <div class="input-file-container">
+                    <input class="input-file" id="fileInput" type="file">
+                    <label tabindex="0" for="my-file" class="input-file-trigger">Upload a key...</label>
+                </div>
+                <p class="file-return"></p>
                 <input id="encode" type="radio" name="coding" value="Encode" onclick="clickRadioButton(this.value)" checked> Encode<br>
                 <input id="decode" type="radio" name="coding" value="Decode" onclick="clickRadioButton(this.value)"> Decode<br>
-                <button onclick="readSingleFile()"> DO IT! </button>
+                <button id="encodeButton" onclick="readSingleFile()"> ENCODE </button>
             </div>
             <div id="outputArea">
                 <p id="outputText"></p>
@@ -26,123 +115,160 @@
         </div>
 
 
+
         <script type="text/javascript">        
-            var indexOffsetIncrement = 6;
-            var offsetIncrement = 9;
+            var indexStepIncrement = 6;
+            var searchStartOffsetIncrement = 9;
             var encode = true;
 
-            var indexOffset = 0;
-            var offset = 0;
+            var indexStep = 0;
+            var searchStartOffset = 0;
 
-            var text = "";
+            var key = ""; // 0H1e2y3 4t5h6e7r8e9,10 11h12o13w14 15a16r17e18 19y20o21u22? --> message => eyyy, who art thou? ---> 8-32-38-27-40-55-56-60-75-64
+
             function readSingleFile(evt) {
-                var f = document.getElementById("fileinput").files[0];
-                if (f || (test != "")) {
+                var f = document.getElementById("fileInput").files[0];
+                var message = document.getElementById("inputText").value;
+
+                if (f) {
                     var r = new FileReader();
                     r.onload = function (e) {
                         var contents = e.target.result;
-                        text = r.result;
+                        key = r.result;
 
-                        var message = document.getElementById("inputText").value;
-
-                        console.log(encode);
                         if (encode)
                         {
                             document.getElementById("outputText").innerText = encodeMessage(message);
                         }
                         else
                         {
-                            document.getElementById("outputText").innerText = decodeMessage(message);
+                            document.getElementById("outputText").innerHTML = decodeMessage(message);
                         }
                     }
                     
                     r.readAsText(f);
-                } else {
-                    alert("Please Upload A Key File");
+                } else if (key != "")
+                {
+                    if (encode) {
+                        document.getElementById("outputText").innerText = encodeMessage(message);
+                    }
+                    else {
+                        document.getElementById("outputText").innerHTML = decodeMessage(message);
+                    }
+                }
+                else {
+                    alert("You must upload a key file");
                 }
             }
 
             function encodeChar(char)
             {
-                offset += offsetIncrement;
-                var position = text.indexOf(char, offset) + 1;
+                var position = key.indexOf(char, searchStartOffset) + 1; // 0, 9, 18, 27, 36, 45, 54, ...
                 if (position == 0)
                 {
-                    offset = 0;
-                    position = text.indexOf(char, offset) + 1;
+                    searchStartOffset = 0;
+                    position = key.indexOf(char, searchStartOffset) + 1;
                     if (position == 0)
                     {  
-                        alert("CANNOT ENCODE THAT MESSAGE WITH THE GIVEN KEY!");
-                        location.reload();
-                       
+                        throw new Error("Bad Key/Message Combination");
                     }
                 }
-                indexOffset += indexOffsetIncrement;
-                if (indexOffset > 69)
-                {
-                    indexOffset = 0;
-                }
+                searchStartOffset += searchStartOffsetIncrement;
 
-                var newPosition = position + indexOffset;
-                if (newPosition >= text.length)
-                {
-                    newPosition = position;
+                indexStep += indexStepIncrement; // 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 6, ...    
+                if (indexStep > 69) {
+                    indexStep = 6;
                 }
+                          
+                var newPosition = position + indexStep;
 
                 return newPosition;
             }
 
             function encodeMessage(message)
             {
-                indexOffset = 0;
-
-                var encodedWord = "";
-                for (var i = 0; i < message.length; i++)
+                try
                 {
-                    encodedWord += encodeChar(message[i]) + "-";
-                }
+                    indexStep = 0;
+                    searchStartOffset = 0;
 
-                return encodedWord.substring(0, encodedWord.length - 1);
+                    var encodedWord = "";
+                    for (var i = 0; i < message.length; i++) {
+                        encodedWord += encodeChar(message[i]) + "-";
+                    }
+
+                    return encodedWord.substring(0, encodedWord.length - 1);
+                }
+                catch (error)
+                {
+                    alert("The current message cannot be encoded with the given key");
+                }
             }
 
             function decodeChar(position)
             {
-
-                indexOffset += indexOffsetIncrement;
-                if (indexOffset > 69) {
-                    indexOffset = 0;
-                }
-                var newIndex = position - 1 - indexOffset;
-                if (position + indexOffset >= text.length)
-                {
-                    newIdex = position - 1;
+                indexStep += indexStepIncrement; // 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 6, ...    
+                if (indexStep > 69) {
+                    indexStep = 6;
                 }
 
-                return text[newIndex];
+                var newIndex = position - 1 - indexStep;
+                if (key[newIndex] == undefined) {
+                    throw new Error("Cannot decode the message");
+                }
+                return key[newIndex];
             }
 
             function decodeMessage(code)
             {
-                indexOffset = 0;
-                var numbers = code.split('-');
-                var message = "";
-                for (var i = 0; i < numbers.length; i++)
-                {
-                    message += decodeChar(numbers[i]);
+                try {
+                    indexStep = 0;
+                    var numbers = code.split('-');
+                    var message = "";
+                    for (var i = 0; i < numbers.length; i++) {
+                        message += decodeChar(numbers[i]);
+                    }
+                    return message;
                 }
-                return message;
+                catch (error) {
+                    return "<p style='color: red;'>Cannot decode the message</p>";
+                }
+
             }
 
             function clickRadioButton(type)
             {
                 if (type == "Encode") {
                     encode = true;
+                    document.getElementById('encodeButton').innerText = "ENCODE";
                 }
                 else
                 {
                     encode = false;
+                    document.getElementById('encodeButton').innerText = "DECODE";
                 }
             }
+
+            function setbg(color) {
+                document.getElementById("inputText").style.background = color
+            }
+
+            document.querySelector("html").classList.add('js');
+
+            var fileInput = document.querySelector(".input-file"),
+                button = document.querySelector(".input-file-trigger"),
+                the_return = document.querySelector(".file-return");
+
+            button.addEventListener("click", function (event) {
+                fileInput.focus();
+                return false;
+            });
+
+            fileInput.addEventListener("change", function (event) {
+                if (this.files[0]) {
+                    the_return.innerHTML = this.files[0].name;
+                }
+            });
         </script>
     </body>
 </html>
