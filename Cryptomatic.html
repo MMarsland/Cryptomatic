@@ -1,9 +1,11 @@
 <!--
-    --- The Cryptomatic 69, Version 2---
+    --- The Cryptomatic 69---
     @author Michael Marsland (For Trevor Ryan Johns) December 14th, 2018
 
     "Merry Christmas and Happy Birthday. May the big brother state never take away your ability to scheme and plot."
 -->
+
+<!-- Version 3 -->
 
 
 <!DOCTYPE HTML>
@@ -14,6 +16,10 @@
                 font-family: "Open sans", "Segoe UI", "Segoe WP", Helvetica, Arial, sans-serif;
                 color: #7F8C9A;
                 background: #FCFDFD;
+            }
+            #wrapper
+            {
+                width: 100%;
             }
 
             #inputText {
@@ -39,6 +45,18 @@
                 font-family: "Palatino Linotype";
                 border: 0px dashed #39D2B4;
                 border-radius: 4px;
+            }
+
+            #copyAllButton {
+                background-color: #39D2B4;
+                border: none;
+                display: none;
+                color: white;
+                padding: 3px 7px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 14px;
+                margin-top: 10px;
             }
 
             .input-file-container {
@@ -91,7 +109,6 @@
             }
 
 
-
         </style>
     </head>
     <body>
@@ -107,7 +124,8 @@
                 <p class="file-return"></p>
                 <input id="encode" type="radio" name="coding" value="Encode" onclick="clickRadioButton(this.value)" checked> Encode<br>
                 <input id="decode" type="radio" name="coding" value="Decode" onclick="clickRadioButton(this.value)"> Decode<br>
-                <button id="encodeButton" onclick="readSingleFile()"> ENCODE </button>
+                <button id="encodeButton" onclick="encodeOrDecode()"> ENCODE </button><br>
+                <button id="copyAllButton" onclick="copyAll()"> Copy to Clipboard </button>
             </div>
             <div id="outputArea">
                 <p id="outputText"></p>
@@ -126,7 +144,7 @@
 
             var key = ""; // 0H1e2y3 4t5h6e7r8e9,10 11h12o13w14 15a16r17e18 19y20o21u22? --> message => eyyy, who art thou? ---> 8-32-38-27-40-55-56-60-75-64
 
-            function readSingleFile(evt) {
+            function encodeOrDecode(evt) {
                 var f = document.getElementById("fileInput").files[0];
                 var message = document.getElementById("inputText").value;
 
@@ -138,11 +156,13 @@
 
                         if (encode)
                         {
-                            document.getElementById("outputText").innerText = encodeMessage(message);
+                            document.getElementById("outputText").innerHTML = encodeMessage(message);
+                            reassesCopyButtonVisibility();
                         }
                         else
                         {
                             document.getElementById("outputText").innerHTML = decodeMessage(message);
+                            reassesCopyButtonVisibility();
                         }
                     }
 
@@ -150,10 +170,12 @@
                 } else if (key != "")
                 {
                     if (encode) {
-                        document.getElementById("outputText").innerText = encodeMessage(message);
+                        document.getElementById("outputText").innerHTML = encodeMessage(message);
+                        reassesCopyButtonVisibility();
                     }
                     else {
                         document.getElementById("outputText").innerHTML = decodeMessage(message);
+                        reassesCopyButtonVisibility();
                     }
                 }
                 else {
@@ -235,42 +257,86 @@
                 }
 
             }
-            </script>
+        </script>
 
-            <script type="text/javascript">
-                function clickRadioButton(type)
+        <script type="text/javascript">
+            document.querySelector("html").classList.add('js');
+
+            var fileInput = document.querySelector(".input-file"),
+                button = document.querySelector(".input-file-trigger"),
+                the_return = document.querySelector(".file-return");
+
+            button.addEventListener("click", function (event) {
+                fileInput.focus();
+                return false;
+            });
+
+            fileInput.addEventListener("change", function (event) {
+                if (this.files[0]) {
+                    the_return.innerHTML = this.files[0].name;
+                }
+            });
+
+            reassesCopyButtonVisibility();
+
+
+            function clickRadioButton(type)
+            {
+                if (type == "Encode") {
+                    encode = true;
+                    document.getElementById('encodeButton').innerText = "ENCODE";
+                }
+                else
                 {
-                    if (type == "Encode") {
-                        encode = true;
-                        document.getElementById('encodeButton').innerText = "ENCODE";
-                    }
-                    else
-                    {
-                        encode = false;
-                        document.getElementById('encodeButton').innerText = "DECODE";
-                    }
+                    encode = false;
+                    document.getElementById('encodeButton').innerText = "DECODE";
                 }
+            }
 
-                function setbg(color) {
-                    document.getElementById("inputText").style.background = color
+            function setbg(color)
+            {
+                document.getElementById("inputText").style.background = color
+            }
+
+            function reassesCopyButtonVisibility()
+            {
+                console.log("Running");
+                var text = document.querySelector('#outputText').innerText;
+
+                if (text == '')
+                {
+                    document.querySelector("#copyAllButton").style.display = 'none';
                 }
+                else
+                {
+                    document.querySelector("#copyAllButton").style.display = 'inline-block';
+                }
+            }
 
-                document.querySelector("html").classList.add('js');
+            function copyAll()
+            {
+                const el = document.createElement('input');  // Create a <textarea> element
+                el.value = document.querySelector('#outputText').innerText;                                 // Set its value to the string that you want copied
+                el.setAttribute('readonly', '');                // Make it readonly to be tamper-proof
+                el.style.position = 'absolute';
+                el.style.left = '-9999px';                      // Move outside the screen to make it invisible
+                document.body.appendChild(el);                  // Append the <textarea> element to the HTML document
+                const selected =
+                   document.getSelection().rangeCount > 0        // Check if there is any content selected previously
+                     ? document.getSelection().getRangeAt(0)     // Store selection if found
+                     : false;                                    // Mark as false to know no selection existed before
+                el.select();                                    // Select the <textarea> content
+                document.execCommand('copy');                   // Copy - only works as a result of a user action (e.g. click events)
+                document.body.removeChild(el);                  // Remove the <textarea> element
+                if (selected) {                                 // If a selection existed before copying
+                   document.getSelection().removeAllRanges();    // Unselect everything on the HTML document
+                   document.getSelection().addRange(selected);   // Restore the original selection
+                }
+            }
 
-                var fileInput = document.querySelector(".input-file"),
-                    button = document.querySelector(".input-file-trigger"),
-                    the_return = document.querySelector(".file-return");
 
-                button.addEventListener("click", function (event) {
-                    fileInput.focus();
-                    return false;
-                });
 
-                fileInput.addEventListener("change", function (event) {
-                    if (this.files[0]) {
-                        the_return.innerHTML = this.files[0].name;
-                    }
-                });
-            </script>
+
+        </script>
     </body>
 </html>
