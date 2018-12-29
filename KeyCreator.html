@@ -71,6 +71,20 @@
                 text-decoration: none;
                 font-size: 14px;
                 margin-top: 10px;
+                display: inline-block;
+            }
+
+            #downloadFileButton {
+                background-color: #39D2B4;
+                border: none;
+                display: none;
+                color: white;
+                padding: 3px 7px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 14px;
+                margin-top: 10px;
+                display: inline-block;
             }
 
             #outputText
@@ -137,6 +151,7 @@
             <button id="checkButton" onclick="checkKey(true)"> CHECK </button>
             <button id="addSymbolsButton" onclick="addMissingSymbols()"> Add Missing Symbols </button><br>
             <button id="copyAllButton" onclick="copyAll()"> Copy to Clipboard </button>
+            <button id="downloadFileButton" onclick="downloadCompleteKey()"> Download Complete Key </button>
             <div id="outputArea">
                 <p id="outputText"></p>
             </div>
@@ -179,15 +194,24 @@
                 
                 document.getElementById("outputText").innerText = key;
                 reassesCopyButtonVisibility();
+                reassesDownloadButtonVisibility();
             }
 
             function displayMissingSymbols()
             {
                 if (missingSymbols == ""){
                     document.getElementById("outputText").innerText = "This key is complete! Happy Encoding!";
+                    reassesDownloadButtonVisibility();
                 } else {
                     document.getElementById("outputText").innerText = "This key is missing the following symbols:\n" + missingSymbols;
                 }
+            }
+
+            function downloadCompleteKey()
+            {
+                addMissingSymbols();
+                var key = document.getElementById("outputText").innerText;
+                download("CompleteKey.txt", key);
             }
         </script>
 
@@ -195,6 +219,7 @@
             document.querySelector("html").classList.add('js');
 
             reassesCopyButtonVisibility();
+            reassesDownloadButtonVisibility();
 
             function setbg(color)
             {
@@ -203,7 +228,6 @@
 
             function reassesCopyButtonVisibility()
             {
-                console.log("Running");
                 var text = document.querySelector('#outputText').innerText;
 
                 if (text == '')
@@ -213,6 +237,20 @@
                 else
                 {
                     document.querySelector("#copyAllButton").style.display = 'inline-block';
+                }
+            }
+
+            function reassesDownloadButtonVisibility()
+            {
+                var text = document.querySelector('#outputText').innerText;
+
+                if (text == '')
+                {
+                    document.querySelector("#downloadFileButton").style.display = 'none';
+                }
+                else
+                {
+                    document.querySelector("#downloadFileButton").style.display = 'inline-block';
                 }
             }
 
@@ -236,6 +274,19 @@
                    document.getSelection().addRange(selected);   // Restore the original selection
                 }
             }
+
+            function download(filename, text) {
+                var element = document.createElement('a');
+                element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+                element.setAttribute('download', filename);
+
+                element.style.display = 'none';
+                document.body.appendChild(element);
+
+                element.click();
+
+                document.body.removeChild(element);
+                }
         </script>
     </body>
 </html>
