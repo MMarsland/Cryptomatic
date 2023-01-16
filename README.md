@@ -11,4 +11,4 @@ Any key file can be used as long as it contains all characters that you wish to 
 
 ## Example
 
-![alt text](Cryptomatic.gif "Demonstration of Cryptomatic (GIF)")
+![alt text](CryptomaticDemo.gif "Demonstration of Cryptomatic (GIF)")
